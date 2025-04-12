@@ -1,0 +1,491 @@
+
+WinJPLib for JP-8000 Manual
+-------------------------------------------------------------
+1.  Main Functions
+
+Processes System, Patch, Performance, RPS Pattern, and Motion Control
+data 
+Using WinJPLib, you can perform all the operations listed below with
+respect to data for the JP-8000's System, User Patches, User
+Performances, RPS Patterns, and Motion Control.
+¥ Retrieve data from your JP-8000 on your PC via MIDI (Get)
+¥ Send data from your PC to the JP-8000 via MIDI (Send)
+¥ Load and save data files (Load, Save)
+¥ Rearrange data
+¥ Initialize data
+¥ Edit Patch and Performance names
+
+Sending Patches and Performances to the JP-8000's Temporary
+Area/Previewing them in the Temporary Area 
+
+2 . About the Data
+The various data files can by distinguished by their extension.
+
+Patches
+These are collections of User Patch data for the JP-8000.
+The 128 Patches from A11 through B88 are contained in one file.
+Extension: .pat
+
+Performance
+These are arrangements of user Performance data for the JP-8000.
+The 64 Performances from 11 through 88 are contained in one file.
+Extension: .pfm
+
+System
+This is System data for the JP-8000.
+It includes the System parameters and the Tx/Rx Setting
+(Transmit/Receive setting).
+Extension: .syp
+
+Pattern
+This is RPS Pattern data for the JP-8000.
+The keyboard's 48 Patterns are contained in one file.
+Extension: .ptn
+
+Motion Control
+This is Motion Control data for the JP-8000.
+The 4 Motions A1, A2, B1, and B2 are contained in one file.
+Extension: .mtn
+
+3.  How to Use the Software
+
+< Common Menus >
+
+File (F)
+¥ New (N)
+Opens a new window.
+A dialog box for selection of the data type opens (System Parameter,
+Patch, Performance, Pattern Data, Motion Data).
+All data will be initialized.
+This operation can also be found in the Tool Bar.
+
+¥ Open (O)
+Opens existing files.
+The different types of data are distinguished by their extensions.
+This operation can also be found in the Tool Bar.
+
+¥ Close (C)
+Closes the currently active window.
+If any data has been changed, a prompt appears asking whether or not
+you want to save the data.
+
+¥ Save (S)
+This saves the data in the active window to the disk.
+This operation can also be found in the Tool Bar.
+
+¥ Save As (A)
+For giving a new name to the data in the active window and saving the
+data to disk.
+
+¥ Exit (X)
+This quits WinJPLib.
+If any data has been changed, a dialog appears asking whether or not
+you want to save the data.
+
+Setup (S)
+¥ Tool Bar (T)
+Shows/hides the Tool Bar.
+
+¥ Status Bar (S)
+Shows/hides the Status Bar.
+
+¥ Send Data (D)
+Click on this to select whether or not the data in the Patch or
+Performance windows is to be sent to the JP-8000's Temporary Area.
+
+¥ MIDI Setup
+For setting the MIDI In/Out device.
+The settings are automatically saved to WinJPLib.ini.
+
+¥ Preview Setup
+For setting the Preview parameters.
+Parameters that can be set are Note Number, Velocity, and Tone Length.
+The parameters settings are automatically saved to WinJPLib.ini.
+
+Window (W)
+This is the default setting every time a window is opened.
+
+¥ Cascade (C)
+This setting has the windows overlapping on the screen.
+
+¥ Tile (T)
+This places open windows adjacent to each other on the screen .
+
+¥ Arrange Icons (A)
+
+This lines up the icons in a row.
+
+Help (H)
+¥ About WinJPLib (A)
+This opens "About WinJPLib".
+
+< Patch Menus >
+The following menus are added to the Menu Bar when the Patch window is
+made active.
+
+Patch (P)
+¥ Get Patch
+This retrieves User Patch data from the JP-8000 and loads it into your
+computer.
+This operation can also be found in the Tool Bar.
+
+¥ Send Patch
+This sends User Patch data from your computer to the JP-8000's User
+Patch Area.
+This operation can also be found in the Tool Bar.
+
+< Performance Menus >
+The following menus are added to the menu bar when the Performance
+window is made active.
+
+Performance (P)
+¥ Get Performance
+This retrieves User Performance data from the JP-8000 and loads it
+into your computer.
+This operation can also be found in the Tool Bar.
+
+¥ Send Performance
+This sends User Performance data from your computer to the JP-8000's
+User Performance Area.
+This operation can also be found in the Tool Bar.
+
+< System Menus >
+The following menus are added to the menu bar when the System window
+is made active.
+
+System (Y)
+¥ Get System
+This retrieves User System data from the JP-8000 and loads it into
+your computer.
+This operation can also be found in the Tool Bar.
+
+¥ Send System
+This sends User System data from your computer to the JP-8000.
+This operation can also be found in the Tool Bar.
+
+< Pattern Menus >
+System
+¥ Get Pattern
+This retrieves User Pattern data from the JP-8000 and loads it into
+your computer.
+This operation can also be found in the Tool Bar.
+
+¥ Send Pattern
+This sends User Pattern data from your computer to the JP-8000.
+This operation can also be found in the Tool Bar.
+
+< Motion Control Menus >
+
+Motion (M)
+¥ Get Motion
+This retrieves User Motion data from the JP-8000 and loads it into
+your computer.
+This operation can also be found in the Tool Bar.
+
+¥ Send Motion
+This sends User Motion data from your computer to the JP-8000.
+This operation can also be found in the Tool Bar.
+
+Tool Bar
+The Tool Bar features the following functions.
+¥ File New
+¥ File Open
+¥ File Save
+These function the same as New, Open, and Save in the Menu Bar.
+
+¥ Get Patch
+¥ Send Patch
+These function the same as Get and Send in the Patch menu.
+
+¥ Get Performance
+¥ Send Performance
+These function the same as Get Performance and Send Performance in the
+Performance menu.
+
+¥ Get System Parameter
+¥ Send System Parameter
+These function the same as Get System Parameter and Send System
+Parameter in the System menu.
+
+¥ Get Pattern
+¥ Send Pattern
+These function the same as Get Pattern and Send Pattern in the Pattern
+menu.
+
+¥ Get Motion
+¥ Send Motion
+These function the same as Get Motion and Send Motion in the Motion
+menu.
+
+¥ Preview
+This plays the data in the JP-8000's Temporary Area.
+You can change the parameters in [Preview Setup] in the Setup menu.
+
+¥ Clear Copy Buffer
+This clears the Copy Buffer and returns the cursor when the data
+sequence is changed.
+
+¥ About WinJPLib
+This performs the same function as About WinJPLib in the Help menu.
+
+< Patch Window >
+The Patch window features blue icons.
+The names and numbers of the 128 Patches A11 through B88 are displayed
+in columns of eight Patches each separated by thick lines.
+
+Selecting Patches
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you left-click on a Patch, the Patch is selected and its
+color changes.
+When [Send Data] in the Setup menu is checked, the data is output via
+MIDI to the JP-8000's Temporary Area.
+When you press the Tool Bar Preview button under these conditions, the
+selected Patch is played.
+
+Copying Patches to the Copy Buffer
+With no data in the Copy Buffer (with the cursor in its normal
+status), pressing Shift and left-clicking on a Patch, the Patch is
+selected, its color changes, the Patch is copied to the Copy Buffer,
+and the cursor changes to "PAT."
+
+Copying Patches from the Copy Buffer
+When there is a Patch copied into the Copy Buffer (with the cursor
+showing "PAT"), left-clicking any of the Patches A11 through B88
+copies the Patch data to the corresponding location, and the color of
+the selected Patch then changes.
+At this time, the Copy Buffer is cleared, and the cursor returns to
+normal.
+You cannot copy data other than Patch data from the Copy Buffer.
+
+Clearing the Copy Buffer
+When there is a Patch copied into the Copy Buffer (with the cursor
+showing "PAT"), left-clicking on the same Patch clears the Copy Buffer
+without copying the Patch data, and the cursor returns to normal.
+This performs the same function as [Clear Copy Buffer] in the Tool
+Bar.
+
+Initializing Patches
+When you click the right button on the Patch, a pop-up menu opens;
+selecting [Initialize Patch] initializes that Patch.
+
+Editing Patch Names
+When you right-click on the Patch, a pop-up menu opens; by selecting
+[Edit Patch Name], you can edit the name of that Patch.
+
+Getting Individual Patches from the JP-8000
+When you right-click on the Patch, a pop-up menu opens; by selecting
+[Get Patch], you can retrieve individual Patch data from your JP-8000.
+
+Sending Individual Patches to the JP-8000
+When you click the right button on the Patch, a pop-up menu opens; by
+selecting [Send Patch], you can send individual Patch data to your
+JP-8000 from your computer.
+
+< Performance Window >
+The Performance window features red icons.
+The names and numbers of the 64 Performances 11 through 88 are
+displayed in columns of eight Performances separated by thick lines.
+Additionally, the upper Patch for each Performance is displayed in the
+upper right of the Performance, the lower Patch in the lower right.
+
+Selecting Patches and Performances
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you click on a Patch or Performance, the Patch or
+Performance is selected and its color changes.
+When [Send Data] in the Setup menu is checked, the data is output via
+MIDI to the JP-8000's Temporary Area.
+When you press the Tool Bar Preview button under these conditions, the
+selected Patch or Performance is played.
+
+Copying Patches and Performances to the Copy Buffer
+With no data in the Copy Buffer (with the cursor in its normal
+status), pressing Shift and left-clicking on a Patch or Performance,
+the Patch or Performance is selected and its color is changed.
+When it is a Patch that is being copied, the cursor changes to "PAT."
+When it is a Performance that is being copied, the cursor changes to
+"PFM."
+
+Copying Patches and Performances from the Copy Buffer
+When there is a Patch copied into the Copy Buffer (with the cursor
+showing "PAT" or "PFM"), left-clicking with the cursor on any of the
+Patch or Performances copies that Patch or Performance data (other
+kinds of data are not copied) to the corresponding location, and the
+color of the selected data then changes.
+At this time, the Copy Buffer is cleared, and the cursor returns to
+normal.
+
+Clearing the Copy Buffer
+When there is a Patch or Performance copied into the Copy Buffer (with
+the cursor showing "PAT" or "PFM"), left-clicking on the same Patch or
+Performance clears the Copy Buffer without copying the data, and the
+cursor then reverts to its normal condition.
+This performs the same function as [Clear Copy Buffer] in the Tool
+Bar.
+
+Initializing Patches or Performances
+When you right-click on a Patch or Performance, a pop-up menu opens;
+selecting [Initialize Patch] initializes that Patch or Performance.
+
+Editing Patch and Performance Names
+When you right-click on the Patch or Performance, a pop-up menu opens;
+by selecting [Edit Patch Name] or [Edit Performance Name], you can
+edit the name of that Patch or Performance.
+
+Getting Individual Patches and Performances from the JP-8000
+When you right-click on a Patch or Performance, a pop-up menu opens;
+by selecting [Get Patch] or [Get Performance], you can retrieve
+individual Patch or Performance data from your JP-8000.
+
+Sending Individual Patches and Performances to the JP-8000
+When you right-click on the Patch or Performance, a pop-up menu opens;
+by selecting [Send Patch] or [Send Performance], you can send
+individual Patch or Performance data to your JP-8000 from your
+computer.
+
+< System Window >
+The System window has green icons.
+System data includes the System parameters and the Tx/Rx Setting.
+
+Selecting the System Data
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you left-click on System data, that data is selected,
+and the color changes.
+* Data cannot be sent to the JP-8000 with just this procedure.
+
+Copying System Data to the Copy Buffer
+When there is no data in the Copy Buffer (normal cursor), by pressing
+Shift and left-clicking on the system data, that data is selected,
+changing the color, and the data is copied to the Copy Buffer.
+When it is System Parameter data that is being copied, the cursor
+changes to "SYP"; when the transmit and receive setting (Tx/Rx
+Setting) is being copied, the cursor changes to "TRS."
+
+Copying System Data from the Copy Buffer
+When there is System data copied into the Copy Buffer (with the cursor
+showing "SYP" or "TRS"), by left-clicking with the cursor on the
+System data, that data is copied (other types of data are not copied)
+and the color of the selected system data changes.
+At this time, the Copy Buffer is cleared, and the cursor returns to
+its normal state.
+
+Clearing the Copy Buffer
+When there is System data copied into the Copy Buffer (with the cursor
+showing "SYP" or "TRS"), left-clicking on the same System parameter
+clears the Copy Buffer without copying the data, and the cursor then
+reverts to normal.
+This performs the same function as [Clear Copy Buffer] in the Tool
+Bar.
+
+Initializing the System
+When you right-click on the System data, a pop-up menu opens;
+selecting [Initialize System Parameter] or [Initialize Tx/Rx Setting]
+initializes that data.
+
+Getting System Data Individually from the JP-8000
+When you right-click on the System data, a pop-up menu opens; by
+selecting [Get System Parameter] or [Get Tx/Rx Setting], you can
+retrieve individual System data from your JP-8000.
+
+Sending System Data Individually to the JP-8000
+When you right-click on the System data, a pop-up menu opens; by
+selecting [Send System Parameter] or [Send Tx/Rx Setting], you can
+send individual System data to your JP-8000 from your computer.
+
+< Pattern Window >
+The Pattern window features yellow icons.
+The 48 Patterns C#2 - C6 are displayed vertically, and on the left
+side of the window a keyboard corresponding to the Patterns is
+displayed.
+
+Selecting Patterns
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you left-click on a Pattern, the Pattern is selected and
+its color changes.
+* Data cannot be sent to the JP-8000 with just this procedure.
+
+Copying Patterns to the Copy Buffer
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you press Shift while left-clicking on a Pattern, the
+Pattern is selected and its color changes, the Pattern is copied to
+the Copy Buffer, and the cursor changes to "PTN."
+
+Copying Patterns from the Copy Buffer
+When there is a Pattern copied into the Copy Buffer (with the cursor
+showing "PTN"), left-clicking with the cursor on any of the Pattern
+locations copies the Pattern data to the corresponding location, and
+the color of the selected Pattern then changes.
+At this time, the Copy Buffer is cleared, and the cursor returns to
+normal.
+You cannot copy data other than Pattern data from the Copy Buffer.
+
+Clearing the Copy Buffer
+When there is a Pattern copied into the Copy Buffer (with the cursor
+showing "PTN"), left-clicking on the same Pattern clears the Copy
+Buffer without copying the data, and the cursor returns to normal.
+This performs the same function as [Clear Copy Buffer] in the Tool
+Bar.
+
+Initializing Patterns
+When you right-click on a Pattern, a pop-up menu opens; selecting
+[Initialize Pattern] initializes that Pattern.
+
+Getting Individual Pattern Data from the JP-8000
+When you right-click on a Pattern, a pop-up menu opens; by selecting
+[Get Pattern], you can retrieve individual Pattern data from your
+JP-8000.
+
+Sending Individual Pattern Data to the JP-8000
+When you right-click on the Pattern, a pop-up menu opens; by selecting
+[Send Pattern], you can send individual Pattern data to your JP-8000
+from your computer.
+
+
+< Motion Window >
+The Motion window features gray icons.
+The 4 Motions A1, A2, B1, and B2 are displayed vertically on the
+screen.
+
+Selecting Motions
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you left-click on a Motion, the Motion is selected and
+its color changes.
+* Data cannot be sent to the JP-8000 with just this procedure.
+
+Copying Motions to the Copy Buffer
+With no data in the Copy Buffer (with the cursor in its normal
+status), when you press Shift while left-clicking on a Motion, the
+Motion is selected and the color changes, the Motion is copied to the
+Copy Buffer, and the cursor changes to "MTN."
+
+Copying Motions from the Copy Buffer
+When there is a Motion copied into the Copy Buffer (with the cursor
+showing "MTN"), left-clicking on any of the Motion locations copies
+the Motion data to the corresponding location, and the color of the
+selected Motion then changes. The Copy Buffer is cleared, and the
+cursor returns to normal.
+You cannot copy data other than Motion data from the Copy Buffer.
+
+Clearing the Copy Buffer
+When there is a Motion copied into the Copy Buffer (with the cursor
+showing "MTN"), left-clicking on the same Motion clears the Copy
+Buffer without copying the data, and the cursor returns to normal.
+This performs the same function as [Clear Copy Buffer] in the Tool
+Bar.
+
+Initializing Motions
+When you right-click on a Motion, a pop-up menu opens; selecting
+[Initialize Motion] initializes that Motion.
+
+Getting Individual Motion Data from the JP-8000
+When you right-click on a Motion, a pop-up menu opens; by selecting
+[Get Motion], you can retrieve individual Motion data from your
+JP-8000.
+
+Sending Individual Motion Data to the JP-8000
+When you right-click on a Motion, a pop-up menu opens; by selecting
+[Send Motion], you can send individual Motion data to your JP-8000
+from your computer.
+
+
+
+
